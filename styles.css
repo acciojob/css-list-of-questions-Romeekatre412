@@ -1,16 +1,33 @@
-.questions {
-        background-color: #f8fffe; 
-        height: 50px;
-        margin-top: 20px;
-        padding: 15px;
-        max-width: 600px;
-        border-left: 8px solid green;
-        box-sizing: border-box;     
-    }
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+                 Arial, "Noto Sans", "Liberation Sans", sans-serif;
+    line-height: 1.4;
+    padding: 24px;
+    background: #fff;
+    color: #111;
+  }
 
-    .questions p {
-        margin: 0;
-        padding: 0;
-        line-height: 20px;
-        white-space: normal;
-    }
+  h1 {
+    margin: 0 0 12px 0;
+    font-size: 24px;
+  }
+  blockquote.questions {
+    background-color: #f8fffe;
+    height: 50px;
+    margin-top: 20px;               
+    padding: 15px;                 
+    max-width: 600px;              
+    border-left: 8px solid green;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+  }
+  blockquote.questions p {
+    margin: 0;
+    padding: 0;
+  }
+  @media (max-width: 420px) {
+    blockquote.questions { max-width: 100%; }
+  }
+</style>
